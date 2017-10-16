@@ -1,6 +1,6 @@
 <?php
 
-
+//
 class Session{
 
 private static $_sessionStarted=false;
