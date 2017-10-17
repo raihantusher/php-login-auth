@@ -12,7 +12,7 @@ public static function start(){
   if(self::$_sessionStarted==false)
 {
 
-  session_set_cookie_params("1800","/","",false,true);
+session_set_cookie_params("1800","/","",false,true);
 	session_start();
 	self::$_sessionStarted=true;
 }

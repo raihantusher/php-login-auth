@@ -26,17 +26,18 @@ class auth{
 	     Session::destroy();
 
 	}//logout function finished here
-    public function getEvr(){
+    public function getUserDetails(){
     	Session::start();
     	return Session::get('user');
     }
 }//auth class finished here
 
-//$auth=new auth;
-//$userInfoArr=array(
- //"username"=>"raihan",
- //"password"=>'$2y$10$iOJ5i2trZqbvY4KwcOYmTOfE4/k/DL4ydNKMF3ACf1eeqlg.vZNt2'
-//);
- //$auth->login($userInfoArr,"tusher");
+$auth=new auth;
+$userInfoArr=array(
+ "username"=>"raihan",
+ "password"=>'$2y$10$iOJ5i2trZqbvY4KwcOYmTOfE4/k/DL4ydNKMF3ACf1eeqlg.vZNt2'
+);
+ 
+ $auth->login($userInfoArr,"tusher");
  //$auth->logout();
-//print_r($auth->getEvr());
+print_r($auth->getUserDetails());
