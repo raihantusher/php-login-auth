@@ -1,7 +1,7 @@
 <?php
 
-require("RT_password.php");
-require("RT_session.php");
+require("libs/password.php");
+require("libs/session.php");
 //require 'medoo.php';
 class auth{
 
